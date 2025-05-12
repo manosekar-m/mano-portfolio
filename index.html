@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Manosekar M </title>
+  <title>Manosekar M</title>
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
@@ -131,6 +131,56 @@
       font-size: 0.95rem;
       margin-top: 2rem;
     }
+
+    /* Resume Button */
+    .resume-button {
+      display: inline-block;
+      background-color: #00bcd4;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      margin: 2rem 0;
+      transition: background-color 0.3s ease;
+    }
+
+    .resume-button:hover {
+      background-color: #0097a7;
+    }
+
+    /* Skills Section */
+    #skills .skill {
+      margin-bottom: 1.2rem;
+    }
+
+    .skill p {
+      margin: 0 0 0.3rem;
+      font-weight: bold;
+    }
+
+    .skill-bar {
+      background-color: #e0e0e0;
+      border-radius: 30px;
+      overflow: hidden;
+    }
+
+    .skill-fill {
+      background: linear-gradient(to right, #00bcd4, #0077b6);
+      height: 25px;
+      line-height: 25px;
+      color: white;
+      text-align: right;
+      padding-right: 10px;
+      font-weight: bold;
+      border-radius: 30px;
+      animation: fillBar 3s ease-out forwards;
+    }
+
+    @keyframes fillBar {
+      from { width: 0%; }
+    }
   </style>
 </head>
 <body>
@@ -140,6 +190,7 @@
     <p>Aspiring Data Analyst | Passionate about turning data into insights</p>
     <nav>
       <a href="#about">About</a>
+      <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
       <a href="#experience">Experience</a>
       <a href="#education">Education</a>
@@ -150,6 +201,40 @@
   <section id="about">
     <h2>About Me</h2>
     <p>Hi, I'm Manosekar M — a data enthusiast driven by curiosity and precision. I transform data into actionable insights using tools like Python, SQL, Excel, Tableau, and Power BI. Whether it’s finding patterns or predicting trends, I thrive on solving real-world problems with data.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skill">
+      <p>Python</p>
+      <div class="skill-bar">
+        <div class="skill-fill" style="width: 60%;">60%</div>
+      </div>
+    </div>
+    <div class="skill">
+      <p>SQL</p>
+      <div class="skill-bar">
+        <div class="skill-fill" style="width: 70%;">70%</div>
+      </div>
+    </div>
+    <div class="skill">
+      <p>Excel</p>
+      <div class="skill-bar">
+        <div class="skill-fill" style="width: 50%;">50%</div>
+      </div>
+    </div>
+     <div class="skill">
+      <p>Power BI</p>
+      <div class="skill-bar">
+        <div class="skill-fill" style="width: 20%;">20%</div>
+      </div>
+    </div>
+    <div class="skill">
+      <p>Tableau</p>
+      <div class="skill-bar">
+        <div class="skill-fill" style="width: 0%;">0%</div>
+      </div>
+    </div>
   </section>
 
   <section id="projects">
@@ -220,6 +305,10 @@
     </div>
   </section>
 
+  <section style="text-align:center;">
+    <a class="resume-button" href="path-to-your-resume.pdf" target="_blank">📄 Download Resume</a>
+  </section>
+
   <section id="contact">
     <h2>Contact Me</h2>
     <p>Email: manosekarm1221@gmail.com</p>
@@ -229,7 +318,7 @@
   </section>
 
   <footer>
-    <p>&copy; 2025 Maosekar-M | Crafted with curiosity and code 🧠📈</p>
+    <p>&copy; 2025 Manosekar M | Crafted with curiosity and code 🧠📈</p>
   </footer>
 
 </body>

@@ -10,35 +10,42 @@
 
   <!-- Embedded CSS -->
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: 'Open Sans', sans-serif;
-      background: #f3f6fa;
-      color: #222;
+      background: linear-gradient(135deg, #1f1c2c, #928dab);
+      color: #fff;
       line-height: 1.6;
+      perspective: 1200px;
     }
 
     header {
-      background: #1e1f3b;
+      background: rgba(30, 31, 59, 0.8);
+      backdrop-filter: blur(10px);
       color: #ffffff;
-      padding: 2rem 1rem;
+      padding: 2.5rem 1rem;
       text-align: center;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
     }
 
     header h1 {
       font-family: 'Poppins', sans-serif;
-      font-size: 2.5rem;
+      font-size: 3rem;
       margin-bottom: 0.2rem;
     }
 
     header p {
-      font-size: 1.1rem;
-      color: #b0c4de;
+      font-size: 1.2rem;
+      color: #d1d1e9;
     }
 
     nav a {
       margin: 0 1rem;
-      color: #a3d5ff;
+      color: #ffcc70;
       text-decoration: none;
       font-weight: bold;
     }
@@ -50,41 +57,43 @@
 
     section {
       padding: 3rem 1rem;
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
     }
 
     section h2 {
       font-family: 'Poppins', sans-serif;
-      font-size: 2rem;
-      color: #1e1f3b;
+      font-size: 2.2rem;
+      color: #ffd700;
       margin-bottom: 1rem;
-      border-left: 5px solid #00bcd4;
+      border-left: 5px solid #ffcc70;
       padding-left: 10px;
     }
 
     .project,
     .education-item,
     .experience-item {
-      background: #ffffff;
+      background: rgba(255, 255, 255, 0.05);
       margin: 1.5rem 0;
       padding: 1.5rem;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-      transition: transform 0.2s ease;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      transform: rotateY(0deg);
+      transition: transform 0.5s ease, box-shadow 0.3s ease;
     }
 
     .project:hover,
     .education-item:hover,
     .experience-item:hover {
-      transform: translateY(-5px);
+      transform: rotateY(3deg);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
     }
 
     .project h3,
     .education-item h3,
     .experience-item h3 {
       font-family: 'Poppins', sans-serif;
-      color: #0077b6;
+      color: #00ffd5;
       margin-bottom: 0.5rem;
     }
 
@@ -92,8 +101,8 @@
       display: inline-block;
       margin-top: 0.5rem;
       padding: 0.5rem 1rem;
-      background-color: #0077b6;
-      color: white;
+      background-color: #00ffd5;
+      color: #1f1c2c;
       border-radius: 5px;
       text-decoration: none;
       font-weight: bold;
@@ -101,7 +110,7 @@
     }
 
     .github-link:hover {
-      background-color: #005f8e;
+      background-color: #00bfa5;
     }
 
     #experience ul {
@@ -111,11 +120,11 @@
 
     #experience ul li {
       margin-bottom: 0.5rem;
-      list-style-type: disc;
+      list-style-type: square;
     }
 
     #contact a {
-      color: #0077b6;
+      color: #00ffd5;
       text-decoration: none;
     }
 
@@ -124,7 +133,7 @@
     }
 
     footer {
-      background: #1e1f3b;
+      background: rgba(30, 31, 59, 0.9);
       color: #ffffff;
       text-align: center;
       padding: 1.5rem 1rem;
@@ -132,10 +141,9 @@
       margin-top: 2rem;
     }
 
-    /* Resume Button */
     .resume-button {
       display: inline-block;
-      background-color: #00bcd4;
+      background-color: #ff6f61;
       color: white;
       padding: 0.8rem 1.5rem;
       border-radius: 30px;
@@ -147,7 +155,7 @@
     }
 
     .resume-button:hover {
-      background-color: #0097a7;
+      background-color: #e65100;
     }
 
     /* Skills Section */
@@ -161,16 +169,16 @@
     }
 
     .skill-bar {
-      background-color: #e0e0e0;
+      background-color: #444;
       border-radius: 30px;
       overflow: hidden;
     }
 
     .skill-fill {
-      background: linear-gradient(to right, #00bcd4, #0077b6);
+      background: linear-gradient(to right, #00ffd5, #00bfa5);
       height: 25px;
       line-height: 25px;
-      color: white;
+      color: #000;
       text-align: right;
       padding-right: 10px;
       font-weight: bold;
@@ -205,53 +213,25 @@
 
   <section id="skills">
     <h2>Skills</h2>
-    <div class="skill">
-      <p>Python</p>
-      <div class="skill-bar">
-        <div class="skill-fill" style="width: 60%;">60%</div>
-      </div>
-    </div>
-    <div class="skill">
-      <p>SQL</p>
-      <div class="skill-bar">
-        <div class="skill-fill" style="width: 70%;">70%</div>
-      </div>
-    </div>
-    <div class="skill">
-      <p>Excel</p>
-      <div class="skill-bar">
-        <div class="skill-fill" style="width: 50%;">50%</div>
-      </div>
-    </div>
-     <div class="skill">
-      <p>Power BI</p>
-      <div class="skill-bar">
-        <div class="skill-fill" style="width: 20%;">20%</div>
-      </div>
-    </div>
-    <div class="skill">
-      <p>Tableau</p>
-      <div class="skill-bar">
-        <div class="skill-fill" style="width: 0%;">0%</div>
-      </div>
-    </div>
+    <div class="skill"><p>Python</p><div class="skill-bar"><div class="skill-fill" style="width: 60%;">60%</div></div></div>
+    <div class="skill"><p>SQL</p><div class="skill-bar"><div class="skill-fill" style="width: 70%;">70%</div></div></div>
+    <div class="skill"><p>Excel</p><div class="skill-bar"><div class="skill-fill" style="width: 50%;">50%</div></div></div>
+    <div class="skill"><p>Power BI</p><div class="skill-bar"><div class="skill-fill" style="width: 20%;">20%</div></div></div>
+    <div class="skill"><p>Tableau</p><div class="skill-bar"><div class="skill-fill" style="width: 0%;">0%</div></div></div>
   </section>
 
   <section id="projects">
     <h2>Projects</h2>
-
     <div class="project">
       <h3>📊 Sales Dashboard (Tableau)</h3>
       <p>Built a live dashboard visualizing regional and product-wise sales trends to aid strategic decisions.</p>
       <a class="github-link" href="https://github.com/yourusername/sales-dashboard" target="_blank">View Project</a>
     </div>
-
     <div class="project">
       <h3>🔍 Customer Churn Prediction (Python)</h3>
       <p>Analyzed a telecom dataset using logistic regression and Seaborn to visualize churn factors.</p>
       <a class="github-link" href="https://github.com/yourusername/customer-churn-analysis" target="_blank">View Project</a>
     </div>
-
     <div class="project">
       <h3>📈 SQL Data Exploration</h3>
       <p>Wrote optimized SQL queries to extract KPIs from a relational database for business reporting.</p>
@@ -261,20 +241,14 @@
 
   <section id="experience">
     <h2>Experience</h2>
-
     <div class="experience-item">
       <h3>Role</h3>
       <p>start date -- end date</p>
-      <ul>
-        <li>---------------</li>
-        <li>---------------</li>
-        <li>---------------</li>
-      </ul>
+      <ul><li>---------------</li><li>---------------</li><li>---------------</li></ul>
     </div>
-
     <div class="experience-item">
       <h3>IIAIC - VIT-AP</h3>
-      <P>Social Media Lead</P>
+      <p>Social Media Lead</p>
       <p>Dec 2024 – Present</p>
       <ul>
         <li>Analyzed insights and optimized content timing and formats for better reach and engagement.</li>
@@ -285,22 +259,19 @@
 
   <section id="education">
     <h2>Education</h2>
-
     <div class="education-item">
       <h3>Integrated Mtech Software Engineering</h3>
       <p>VIT-AP University, Andhra Pradesh</p>
       <p>2023 – 2028</p>
     </div>
-
     <div class="education-item">
       <h3>Higher Secondary (Class XII)</h3>
-      <p>Ram Jayam Vidyaa Mandir Matric Hr Sec School Cumbum,Theni, Tamil Nadu</p>
+      <p>Ram Jayam Vidyaa Mandir, Cumbum, Theni</p>
       <p>2022 – 2023</p>
     </div>
-
     <div class="education-item">
       <h3>Secondary School (Class X)</h3>
-      <p>Ram Jayam Vidyaa Mandir Matric Hr Sec School Cumbum,Theni, Tamil Nadu</p>
+      <p>Ram Jayam Vidyaa Mandir, Cumbum, Theni</p>
       <p>2020 – 2021</p>
     </div>
   </section>
@@ -323,3 +294,4 @@
 
 </body>
 </html>
+

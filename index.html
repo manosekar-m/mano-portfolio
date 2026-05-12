@@ -278,9 +278,9 @@ section{padding:5.5rem 6vw;position:relative}
 .plink{width:27px;height:27px;border-radius:50%;background:rgba(255,255,255,.04);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:.75rem;transition:background .18s,color .18s,border-color .18s}
 .plink:hover{background:var(--teal);color:var(--bg);border-color:var(--teal)}
 .ptitle{font-family:var(--fh);font-size:.96rem;font-weight:700;margin-bottom:.5rem;line-height:1.3}
-.pdesc{color:var(--muted2);font-size:.83rem;font-weight:300;line-height:1.7;flex:1}
+.pdesc{color:var(--muted2);font-size:.83rem;font-weight:300;line-height:1.7;flex:1;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;margin-bottom:auto}
 .pdesc strong{color:var(--text);font-weight:500}
-.ptags{display:flex;flex-wrap:wrap;gap:.32rem;margin-top:1.1rem}
+.ptags{display:flex;flex-wrap:wrap;gap:.32rem;margin-top:1.4rem;padding-top:1.1rem;border-top:1px solid rgba(255,255,255,.05)}
 .tg{padding:.17rem .52rem;border-radius:3px;font-size:.63rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase}
 .tgt{background:rgba(72,199,255,.08);border:1px solid rgba(72,199,255,.18);color:var(--teal)}
 .tgg{background:rgba(255,201,77,.07);border:1px solid rgba(255,201,77,.16);color:var(--gold)}
@@ -576,43 +576,71 @@ footer{padding:1.5rem 6vw;border-top:1px solid var(--border);display:flex;align-
 
     <div class="pc2 feat rv">
       <div class="feat-in">
-        <div class="pthumb">📈</div>
+        <div class="pthumb">✈️</div>
         <div style="flex:1;min-width:0">
-          <div class="pper">2024 – 2025</div>
+          <div class="pper">2025 – 2026</div>
           <div class="phead">
-            <div class="ptitle">Stock Price Prediction — Fuzzy Logic Engine</div>
-            <div class="plinks"><a href="https://github.com/manosekar-m/stock-fuzzy-logic" target="_blank" class="plink">⬡</a></div>
+            <div class="ptitle">VistaVoyage — AI-Powered Travel Architect</div>
+            <div class="plinks"><a href="https://github.com/manosekar-m/VistaVoyage" target="_blank" class="plink">⬡</a></div>
           </div>
-          <p class="pdesc">Soft-computing prediction using <strong>RSI, MACD & Daily % Change</strong> as fuzzy inputs. Classifies trend (Up / Down / Neutral) and forecasts next-day price. Flask web UI deployed live on Render with 40 years of Apple data.</p>
+          <p class="pdesc">Premium travel booking platform featuring an <strong>AI Travel Architect</strong> for personalized itineraries. Includes secure booking flows, dynamic coupon management, and a comprehensive admin dashboard for business analytics.</p>
           <div class="ptags">
-            <span class="tg tgt">Python</span><span class="tg tgt">Flask</span>
-            <span class="tg tgt">scikit-fuzzy</span><span class="tg tgg">ML</span>
-            <span class="tg tgc">Live on Render</span>
+            <span class="tg tgt">MongoDB</span><span class="tg tgt">Express</span>
+            <span class="tg tgt">React</span><span class="tg tgt">Node.js</span>
+            <span class="tg tgg">OpenAI GPT</span><span class="tg tgc">Cloudinary</span>
           </div>
         </div>
       </div>
     </div>
 
     <div class="pc2 rv">
-      <div class="pper">Feb 2025 – Mar 2025</div>
-      <div class="phead"><div class="pico">📊</div><div class="plinks"><a href="https://github.com/manosekar-m/Data-Professional-Survey-Dashboard" target="_blank" class="plink">⬡</a></div></div>
-      <div class="ptitle">Data Professional Survey Dashboard</div>
-      <p class="pdesc">End-to-end Power BI dashboard from raw survey data. Cleaned with Python & Pandas, revealing salary distributions and tool preferences across global data roles.</p>
-      <div class="ptags"><span class="tg tgt">Power BI</span><span class="tg tgt">Python</span><span class="tg tgt">Pandas</span><span class="tg tgg">DAX</span></div>
+      <div class="pper">2025 – 2026</div>
+      <div class="phead"><div class="pico">💰</div><div class="plinks"><a href="https://github.com/manosekar-m/Fin-Tracker" target="_blank" class="plink">⬡</a></div></div>
+      <div class="ptitle">Fin-Tracker — Premium Finance Ecosystem</div>
+      <p class="pdesc">High-performance financial tracker with <strong>Glassmorphism UI</strong> and <strong>Smart OCR receipt scanning</strong>. Features Hive local storage, biometric security, and professional PDF report generation.</p>
+      <div class="ptags">
+        <span class="tg tgg">Flutter</span><span class="tg tgg">Dart</span>
+        <span class="tg tgv">Firebase</span><span class="tg tgt">Hive</span>
+        <span class="tg tgc">ML Kit</span>
+      </div>
     </div>
 
     <div class="pc2 rv d1">
-      <div class="phead"><div class="pico">📉</div><div class="plinks"><a href="https://github.com/manosekar-m" target="_blank" class="plink">⬡</a></div></div>
-      <div class="ptitle">Customer Churn Prediction</div>
-      <p class="pdesc">Logistic regression model on telecom data predicting churn probability. Deep EDA with Seaborn/Matplotlib identifying key churn predictors.</p>
-      <div class="ptags"><span class="tg tgt">Python</span><span class="tg tgt">Scikit-learn</span><span class="tg tgg">Seaborn</span><span class="tg tgg">EDA</span></div>
+      <div class="pper">2025 – 2026</div>
+      <div class="phead"><div class="pico">✅</div><div class="plinks"><a href="https://github.com/manosekar-m/Taskify" target="_blank" class="plink">⬡</a></div></div>
+      <div class="ptitle">Taskify — Premium Productivity App</div>
+      <p class="pdesc">A high-end productivity suite with <strong>Focus Mode timers</strong> and <strong>Early Alert notifications</strong>. Built with a sleek Material 3 UI, featuring Hive-powered persistence and customizable scheduling.</p>
+      <div class="ptags">
+        <span class="tg tgg">Flutter</span><span class="tg tgg">Dart</span>
+        <span class="tg tgt">Hive</span><span class="tg tgc">Material 3</span>
+      </div>
     </div>
 
     <div class="pc2 rv d2">
-      <div class="phead"><div class="pico">🗃️</div><div class="plinks"><a href="https://github.com/manosekar-m" target="_blank" class="plink">⬡</a></div></div>
-      <div class="ptitle">SQL Business Intelligence Queries</div>
-      <p class="pdesc">Optimised SQL with window functions, CTEs and complex joins to extract KPIs from relational databases for executive BI reports.</p>
-      <div class="ptags"><span class="tg tgt">MySQL</span><span class="tg tgt">SQL</span><span class="tg tgg">KPI Reporting</span><span class="tg tgg">BI</span></div>
+      <div class="pper">2024 – 2025</div>
+      <div class="phead"><div class="pico">👕</div><div class="plinks"><a href="https://github.com/manosekar-m/Clothiq" target="_blank" class="plink">⬡</a></div></div>
+      <div class="ptitle">Clothiq — Premium Apparel E-commerce</div>
+      <p class="pdesc">Modern MERN stack e-commerce platform featuring secure <strong>JWT authentication</strong>, dynamic promo codes, and a powerful <strong>Admin Control Panel</strong> for inventory and revenue analytics.</p>
+      <div class="ptags">
+        <span class="tg tgt">MongoDB</span><span class="tg tgt">Express</span>
+        <span class="tg tgt">React</span><span class="tg tgt">Node.js</span>
+      </div>
+    </div>
+
+    <div class="pc2 rv">
+      <div class="pper">2024 – 2025</div>
+      <div class="phead"><div class="pico">📈</div><div class="plinks"><a href="https://github.com/manosekar-m/stock-fuzzy-logic" target="_blank" class="plink">⬡</a></div></div>
+      <div class="ptitle">Stock Price Prediction — Fuzzy Logic Engine</div>
+      <p class="pdesc">Soft-computing prediction using <strong>RSI, MACD & Daily % Change</strong> as fuzzy inputs. Classifies trend and forecasts next-day price. Deployed on Render with Apple market data.</p>
+      <div class="ptags"><span class="tg tgt">Python</span><span class="tg tgt">Flask</span><span class="tg tgg">ML</span><span class="tg tgc">Render</span></div>
+    </div>
+
+    <div class="pc2 rv d1">
+      <div class="pper">Feb 2025 – Mar 2025</div>
+      <div class="phead"><div class="pico">📊</div><div class="plinks"><a href="https://github.com/manosekar-m/Data-Professional-Survey-Dashboard" target="_blank" class="plink">⬡</a></div></div>
+      <div class="ptitle">Data Professional Survey Dashboard</div>
+      <p class="pdesc">End-to-end Power BI dashboard revealing salary distributions and tool preferences across global data roles. Cleaned with Python & Pandas.</p>
+      <div class="ptags"><span class="tg tgt">Power BI</span><span class="tg tgt">Python</span><span class="tg tgt">Pandas</span><span class="tg tgg">DAX</span></div>
     </div>
 
   </div>
